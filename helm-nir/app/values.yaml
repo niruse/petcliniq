@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: niruse/petclinic-app
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  name: nginx-service
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+env:
+  name: dev

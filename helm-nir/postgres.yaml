@@ -1,0 +1,11 @@
+postgres:
+  config:
+    data:
+      - key: POSTGRES_DB
+        value: petclinic
+      - key: POSTGRES_USER
+        value: petclinic
+      - key: POSTGRES_PASSWORD
+        value: petclinic
+      - key: MYSQL_ROOT_PASSWORD
+        value: MYSQL_ALLOW_EMPTY_PASSWORD=true
